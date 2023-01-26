@@ -30,8 +30,8 @@ body {
   background: var(--colour-dark);
   /* height: 100vh;
   display: flex;
-  align-items: center;
-  background: linear-gradient(to top right, #82296f, #84a0ff); */
+  align-items: center; */
+  /* background: linear-gradient(to top right, #82296f, #84a0ff); */
 }
 
 .container {
@@ -59,7 +59,7 @@ h5 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: -0.4rem;
   line-height: 0.8;
 }
@@ -107,7 +107,7 @@ p {
 
 .btn-primary {
   background: var(--primary-colour);
-  color: var(--colour-white);
+  color: var(--colour-black);
 }
 
 section {
@@ -130,7 +130,6 @@ nav button {
 }
 
 nav .container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,4 +165,51 @@ nav .icons {
   display: flex;
   gap: 2rem;
   font-size: 1.2rem;
+}
+
+/* ======================= HEADER ======================= */
+header {
+  height: 100%;
+  max-width: 100vw;
+  position: relative;
+  top: 10rem;
+  display: grid;
+  place-items: center;
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: 30rem auto;
+  align-items: center;
+  max-height: 100%;
+  margin-top: -5rem;
+}
+
+header .container .info .virtual-photography {
+  background: var(--primary-colour-variant);
+  width: max-content;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  color: var(--colour-black);
+  margin-bottom: 1.5rem;
+}
+
+header .container .info .virtual-photography i {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+header .container .info .cta {
+  display: flex;
+  align-items: center;
+  padding-top: 2.5rem;
+}
+
+header .container .header-image {
+  position: right;
+  max-width: 50vw;
+}
+
+header .container .header-image img {
+  border-radius: 20px;
 }
